@@ -31,6 +31,7 @@ public class Calcularduracion {
             public void run(){
                while(isTracking){
                        try{
+                           /*Chanje Sleep la a yon de 1000 millisecond pou ka teste li*/
                            sleep(60000);
                             minuto++;
                             if(minuto > 59){
@@ -55,33 +56,5 @@ public class Calcularduracion {
         thread.start();
         
     }
-    
-    /*
-    
-    
-        
-        
-          TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-                      minuto++;
-                    if(minuto > 59){
-                        minuto = 0;
-                        hora++;
-                    }
-                    
-                    if(minuto < 10)
-                        min.setText(" "+"0"+ minuto+ " ");
-                    else
-                    {
-                        min.setText(" "+ minuto+ " ");
-                    }
-                    h.setText(" "+ hora+ " ");
-            }
-           };
-            timer.schedule(task, 0, this.delay);   
-    */
-            
-   
-    
+     
 }
